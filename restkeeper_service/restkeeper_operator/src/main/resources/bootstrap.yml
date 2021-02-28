@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: operator-dubbo-provider
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.68.100:8848
+      config:
+        server-addr: 192.168.68.100:8848
+        file-extension: yml
+        prefix: operator-dubbo-provider
+        shared-configs:
+          - dataId: common.yml
+            group: DEFAULT_GROUP
+            refresh: true

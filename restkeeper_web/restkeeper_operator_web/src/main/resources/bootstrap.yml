@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: operator-web
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.68.10:8848
+      config:
+        server-addr: 192.168.68.10:8848
+        file-extension: yml
+        prefix: operator-web
+        shared-configs:
+          - dataId: common.yml
+            group: DEFAULT_GROUP
+            refresh: true
+  profiles:
+    active: dev
+server:
+  port: 8083
+
+# ===== 自定义swagger配置 ===== #
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  application-version: 1.0
+  application-description: springfox swagger 3.0整合Demo
+  try-host: http://localhost:${server.port}
+
+
