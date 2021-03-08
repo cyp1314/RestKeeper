@@ -6,12 +6,11 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.68.100:8848
+        server-addr: 192.168.68.10:8848
       config:
-        server-addr: 192.168.68.100:8848
+        server-addr: 192.168.68.10:8848
         file-extension: yml
         prefix: operator-dubbo-provider
-        shared-configs:
-          - dataId: common.yml
-            group: DEFAULT_GROUP
-            refresh: true
+        shared-dataids: common.yml
+        refreshable-dataids: common.yml
+        group: DEFAULT_GROUP

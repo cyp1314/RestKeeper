@@ -11,5 +11,8 @@ spring:
         server-addr: 192.168.68.10:8848
         file-extension: yml
         prefix: ${spring.application.name}
+        shared-dataids: common.yml
+        refreshable-dataids: common.yml
+        group: DEFAULT_GROUP
 server:
   port: 8085

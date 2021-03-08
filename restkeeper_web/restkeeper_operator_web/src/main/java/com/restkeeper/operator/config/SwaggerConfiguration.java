@@ -1,7 +1,7 @@
 package com.restkeeper.operator.config;
 
 import io.swagger.models.auth.In;
-import org.apache.commons.lang3.reflect.FieldUtils;
+import org.apache.commons.lang.reflect.FieldUtils;
 import org.springframework.boot.SpringBootVersion;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

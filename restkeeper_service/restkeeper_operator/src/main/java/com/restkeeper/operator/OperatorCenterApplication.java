@@ -9,6 +9,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class OperatorCenterApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(OperatorCenterApplication.class, args);
     }
+
 }
